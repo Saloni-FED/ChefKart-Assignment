@@ -6,22 +6,27 @@ import Spices from "../Spices";
 import Vegetables from "../Vegetables";
 import fridge_2 from "../../assets/images/Mask Group 20/fridge_2.jpg";
 import { Link } from "react-router-dom";
+
 const DetailPage = () => {
   return (
-    <div className="w-full">
+  
+    <div className="w-full border-yellow-200 md:flex md:pl-44 xl:pl-96 ">
       <div className="mt-[48px] pl-[16px]">
-        <Link to='/'>
+        <Link to="/">
           <img src={arrow} alt="" className="cursor-pointer" />
         </Link>
       </div>
-      <div className=" relative w-full">
+      <div className="relative w-full">
         <div id="left" className="mt-[27.31px] pl-[24px]">
           <div>
-            <h1 className="w-[187px] h-[32px] font-Select font-extrabold text-[#242424] text-[23px]">
-              Mashala Muglai
+            <h1 className="w-full h-[32px] font-Select font-extrabold text-[#242424] text-[23px] flex items-center z-40">
+              Mashala Muglai{" "}
+              <div className="w-[22px] h-[10px] ml-[10px] text-[6px] tracking-[0.12px] bg-l_green text-white rounded-sm flex justify-center items-center">
+                4.2 s
+              </div>
             </h1>
           </div>
-          <div className="mt-[6px] w-[182px] h-[39px] text-[#A3A3A3] text-[8px] font-Select tracking-[0.16px] ">
+          <div className="mt-[6px] w-[182px] h-[39px] text-[#A3A3A3] text-[8px] font-Select tracking-[0.16px]">
             <h4>
               Mughlai Masala is a style of cookery developed in the Indian
               Subcontinent by the imperial kitchens of the Mughal Empire.
@@ -61,7 +66,7 @@ const DetailPage = () => {
               <h2 className="w-[88px] h-[22px] font-bold tracking-[0.16px] font-Select text-sl_col text-[16px]">
                 Appliances
               </h2>
-              <div className="mt-[16px] flex w-[304px]">
+              <div className="mt-[16px] flex w-[304px] justify-between">
                 {[0, 1, 2].map((items) => {
                   return (
                     <div
@@ -81,7 +86,17 @@ const DetailPage = () => {
         </div>
 
         {/* Right */}
-        <div className="">
+        <div className="w-full overflow-x-hidden">
+          <div className="w-[192px] h-[192px] rounded-full bg-[#FFF9F2] absolute -z-10 top-0 left-[189px]"></div>
+          <div className="absolute left-[250px] top-8 z-10 ">
+            <img src={bowl} alt="" />
+          </div>
+          <div className="absolute left-48 top-20">
+            <img src={veggies} alt="veggie" />
+          </div>
+        </div>
+
+        {/* <div className="">
           <div className="w-[192px] h-[192px] rounded-full bg-[#FFF9F2] absolute -z-10 top-0 left-[189px] overflow-x-hidden"></div>
           <div className="absolute left-[250px] top-10 z-10">
             <img src={bowl} alt="" />
@@ -89,7 +104,7 @@ const DetailPage = () => {
           <div className="absolute -right-24 top-16">
             <img src={veggies} alt="veggie" />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

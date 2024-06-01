@@ -1,7 +1,7 @@
 import down from "../assets/images/Path 786/path.jpg";
 const Spices = () => {
   return (
-    <div id="spices" className="mt-[20px]">
+    <div id="spices" className="mt-[20px] w-full">
       <div>
         <h1 className="inline font-Select text-[12px] text-[#242424] mr-[16.21px] font-bold">
           Spices (10)

@@ -1,8 +1,7 @@
-import React from "react";
 import down from "../assets/images/Path 786/path.jpg"
 const Vegetables = () => {
   return (
-    <div id="veggie" className="mt-[16px]">
+    <div id="veggie" className="mt-[16px] w-full">
       <div>
         <h1 className="inline font-Select text-[12px] text-[#242424] mr-[16.21px] font-bold">
           Vegetables (05)

@@ -1,20 +1,21 @@
 import Veg from "../../assets/images/Group 359/veg.jpg";
 import Fridge from "../../assets/images/Group 508/fridge.jpg";
 import { Link } from "react-router-dom";
-const Recommended = () => {
+const Recommended = ({ items }) => {
+  // console.log(items);
   return (
     <div>
       <div className="mt-5 flex justify-between">
         <div id="left" className="w-[156px] h-[73px]">
           <div id="1_row" className="flex justify-start items-center">
             <h2 className="inline text-[12px] font-Select font-semibold">
-              Masala Muglai
+              {items ? items.name : "Masala Muglai"}
               <img src={Veg} alt="veg" className="inline ml-[6px]" />
             </h2>
 
             {/* <div className="w-[22px] h-[10px] border "></div> */}
             <div className="w-[22px] h-[10px]  ml-[10px] text-[6px] tracking-[0.12px] flex justify-center items-center bg-l_green text-white rounded-sm ">
-              4.2 s
+               4.2 s
             </div>
           </div>
 
@@ -40,7 +41,7 @@ const Recommended = () => {
               <h5 className="tracking-[0.12px] font-Select font-bold mb-[0.3px]">
                 Ingredients
               </h5>
-              <Link to='/detail'>
+              <Link to="/detail">
                 <h6 className="text-list cursor-pointer">View List {">"}</h6>
               </Link>
             </div>
@@ -50,14 +51,16 @@ const Recommended = () => {
             id="row_3"
             className="h-[22px]  mt-2 text-[8px] text-left tracking-[0.16px] text-[#707070] font-Select leading-tight"
           >
-            Chicken fried in deep tomato sauce with delicious spices
+            {items
+              ? items.description
+              : "Chicken fried in deep tomato sauce with delicious spices"}
           </div>
         </div>
 
         {/* Right side */}
         <div id="right" className="'ml-[59px]  relative ">
           <img
-            src="https://img.freepik.com/free-photo/top-view-delicious-corn-dog_23-2149387975.jpg"
+            src={items ? items.image : "https://img.freepik.com/free-photo/top-view-delicious-corn-dog_23-2149387975.jpg"}
             alt=""
             className="w-[92px] h-[68px] rounded-md"
           />

@@ -3,17 +3,14 @@ import Calendar from "../assets/images/Select_date-01/Select_date-01.jpg";
 import Clock from "../assets/images/Set_time-01/Set_time-01.jpg";
 import { foodName } from "../constants/constant";
 import Body from "../components/Body";
-import { IoFastFoodOutline} from "react-icons/io5";
+import { IoFastFoodOutline } from "react-icons/io5";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Carousel from "./Carousel";
 
 const Header = () => {
   return (
-    <div
-      id="header"
-      className="w-screen"
-    >
-      <div className=" mt-[24px] h-[57px] pt-[18px] pb-[17px] border ">
+    <div id="header" className="w-full">
+      <div className=" mt-[24px] h-[57px] pt-[18px] pb-[17px] ">
         <div
           id="dishes"
           className="h-[22px]  w-fit flex justify-center items-center ml-[16px]"
@@ -48,31 +45,36 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="mt-[20px] pl-5 flex">
-          {foodName.map((name, i) => {
-            return (
-              <div
-                className={`${
-                  i === 0
-                    ? " border-[#FF941A] text-center py-[5px] font-Select font-bold text-[#FF941A]"
-                    : " border-[#BDBDBD] text-center py-[5px] font-Select font-bold text-[#8A8A8A] ml-[16px]"
-                } w-[76px] h-[24px]  border-[0.5px] rounded-[17px] border-solid`}
-                key={i}
-              >
-                <h3 className="tracking-[0.1px] text-[10px]">Italian</h3>
-              </div>
-            );
-          })}
+        <div>
+          <div className="sm:flex sm:justify-center">
+          <div className="mt-[20px] pl-5 flex ">
+            {foodName.map((name, i) => {
+              return (
+                <div
+                  className={`${
+                    i === 0
+                      ? " border-[#FF941A] text-center py-[5px] font-Select font-bold text-[#FF941A]"
+                      : " border-[#BDBDBD] text-center py-[5px] font-Select font-bold text-[#8A8A8A] ml-[16px]"
+                  } w-[76px] h-[24px]  border-[0.5px] rounded-[17px] border-solid`}
+                  key={i}
+                >
+                  <h3 className="tracking-[0.1px] text-[10px]">{name}</h3>
+                </div>
+              );
+            })}
+          </div>
+          </div>
+          
         </div>
 
         {/* Popular Dishes */}
-        <div className="mt-[15px] pl-[23px]">
-          <div className="">
-            <h1 className="text-[14px] tracking-[0.14px] text-sl_col font-Select font-bold">
+        <div className="mt-[15px] pl-[23px]  ">
+          <div className="sm:flex sm:justify-center">
+            <h1 className="text-[14px] tracking-[0.14px] text-sl_col font-Select font-bold sm:text-center">
               Popular Dishes
             </h1>
           </div>
-          <div className="mt-3 flex overflow-x-scroll scroll-smooth no-scrollbar">
+          <div className="mt-3 flex overflow-x-scroll scroll-smooth no-scrollbar sm:justify-center">
             <Carousel />
           </div>
         </div>
