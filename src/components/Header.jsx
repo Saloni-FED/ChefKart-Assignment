@@ -87,7 +87,7 @@ const Header = () => {
       </div>
 
       {/*  */}
-      <div className="w-[239px] h-10 bg-sl_col rounded-[7px] shadow-it_sha text-white fixed right-[60px] left-[60px] top-[501px] py-[5px]">
+      <div className="w-[239px] h-10 bg-sl_col rounded-[7px] shadow-it_sha text-white fixed right-[60px] left-[60px] top-[520px] py-[5px]">
         <IoFastFoodOutline className="inline ml-4 mr-1 " />
         <h3 className="inline ml-[0.93px] text-[12px] font-Select ">
           3 food items selected
