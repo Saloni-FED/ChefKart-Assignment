@@ -22,7 +22,7 @@ const Header = () => {
       {/*  */}
 
       <div className="h-[42px] bg-sl_col pt-[21px]">
-         <div className="w-[314px] h-[63px] bg-white rounded-[9px] shadow-2xl mx-auto">
+         <div className="w-[314px] h-[63px] bg-white rounded-[9px] shadow-2xl">
 
          </div>
       </div>
