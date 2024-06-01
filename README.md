@@ -1,8 +1,11 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ChefKart (Assignment)
+I have created a clone of the ChefKart website as part of my assignment. I utilized React.js, a popular JavaScript framework, for the development. For styling, I employed Tailwind CSS, a CSS framework known for its utility-first approach. Additionally, I have also used React Router Dom and React Icons for dynamic routing and Data Loading within the application.
+## Demo 👇
 
-Currently, two official plugins are available:
+Demo-: [Chefkart Assignment](https://chefkart-assignment.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Tech Stack ⚙️
+React JS, Tailwind Css, React Router Dom 
+
