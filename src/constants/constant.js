@@ -1,0 +1,1 @@
+export const foodName = ['Italian', "Indian", "Indian", "Indian"]
